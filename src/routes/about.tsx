@@ -91,7 +91,7 @@ function About() {
           <img src={kidsColorImg} alt="Cherry Kids classroom" width={1024} height={800} loading="lazy" className="rounded-[2rem] shadow-xl object-cover aspect-[5/4]" />
           <div>
             <span className="eyebrow">Our story</span>
-            <h2 className="mt-4 text-3xl md:text-5xl">Started by parents, made for kids.</h2>
+            <h2 className="mt-4 text-3xl md:text-5xl">Started by parents, made for kids. </h2>
             <p className="mt-4 text-muted-foreground">
               Cherry Kids opened its doors in 2017 with one simple dream, to create a preschool where every child feels safe, happy, and excited to learn. 
             </p>
