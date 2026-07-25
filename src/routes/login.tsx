@@ -168,7 +168,7 @@ function AuthScreen() {
               </div>
             </div>
 
-            <button type="submit" disabled={loading} className="w-full bg-primary text-primary-foreground py-2.5 rounded-xl font-medium hover:opacity-90 transition text-sm shadow-sm flex items-center justify-center gap-2">
+            <button type="submit" disabled={loading} className="w-full bg-primary text-primary-foreground py-2.5 rounded-xl font-medium hover:opacity-90 transition text-sm shadow-sm flex items-center justify-center gap-2 cursor-pointer">
               <KeyRound className="h-4 w-4" /> {loading ? "Signing in..." : "Login"}
             </button>
           </form>
@@ -190,7 +190,7 @@ function AuthScreen() {
               <input type="email" required className="w-full border rounded-xl p-2.5 bg-background text-sm" placeholder="cherrykidspreprimaryschool@gmail.com" value={email} onChange={e => setEmail(e.target.value)} />
             </div>
 
-            <button type="submit" disabled={loading} className="w-full bg-primary text-primary-foreground py-2.5 rounded-xl font-medium hover:opacity-90 transition text-sm shadow-sm flex items-center justify-center gap-2">
+            <button type="submit" disabled={loading} className="w-full bg-primary text-primary-foreground py-2.5 rounded-xl font-medium hover:opacity-90 transition text-sm shadow-sm flex items-center justify-center gap-2 cursor-pointer">
               <RefreshCw className={`h-4 w-4 ${loading ? 'animate-spin' : ''}`} /> {loading ? "Sending Email Code..." : "Send Verification OTP"}
             </button>
           </form>
@@ -212,7 +212,7 @@ function AuthScreen() {
               />
             </div>
 
-            <button type="submit" className="w-full bg-primary text-primary-foreground py-2.5 rounded-xl font-medium hover:opacity-90 transition text-sm shadow-sm">
+            <button type="submit" className="w-full bg-primary text-primary-foreground py-2.5 rounded-xl font-medium hover:opacity-90 transition text-sm shadow-sm cursor-pointer">
               Verify Credentials
             </button>
           </form>
@@ -231,7 +231,7 @@ function AuthScreen() {
               <input type="password" required className="w-full border rounded-xl p-2.5 bg-background text-sm" placeholder="Enter new password" value={newPassword} onChange={e => setNewPassword(e.target.value)} />
             </div>
 
-            <button type="submit" disabled={loading} className="w-full bg-emerald-600 text-white py-2.5 rounded-xl font-medium hover:bg-emerald-700 transition text-sm shadow-sm flex items-center justify-center gap-2">
+            <button type="submit" disabled={loading} className="w-full bg-emerald-600 text-white py-2.5 rounded-xl font-medium hover:bg-emerald-700 transition text-sm shadow-sm flex items-center justify-center gap-2 cursor-pointer">
               <ShieldCheck className="h-4 w-4" /> {loading ? "Saving changes..." : "Save New Password"}
             </button>
           </form>

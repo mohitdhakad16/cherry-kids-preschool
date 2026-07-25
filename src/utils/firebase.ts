@@ -8,14 +8,6 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  // apiKey: "AIzaSyD3b8MjoDqrgbMsATIkM__g-A0rrxY3kFA",
-  // authDomain: "cherrykidspreschooluran-466c4.firebaseapp.com",
-  // projectId: "cherrykidspreschooluran-466c4",
-  // storageBucket: "cherrykidspreschooluran-466c4.firebasestorage.app",
-  // messagingSenderId: "419949262787",
-  // appId: "1:419949262787:web:3f8f1ee3bfa02f139c6f76",
-  // measurementId: "G-C038G4XRP"
-
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,

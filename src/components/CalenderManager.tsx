@@ -54,9 +54,25 @@ export function CalendarManager({ events, onSaveEvents }: CalendarManagerProps) 
         }
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    // const handleSubmit = (e: React.FormEvent) => {
+    //     e.preventDefault();
+    //     let updatedEvents = [...events];
+    //     if (editingIndex !== null) {
+    //         updatedEvents[editingIndex] = formData;
+    //     } else {
+    //         updatedEvents = [formData, ...updatedEvents];
+    //     }
+    //     onSaveEvents(updatedEvents);
+    //     setFormData(initialFormState);
+    //     setEditingIndex(null);
+    // };
+
+   const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        let updatedEvents = [...events];
+        // Safeguard: Ensure events is always treated as a valid array
+        const currentEvents = Array.isArray(events) ? events : [];
+        let updatedEvents = [...currentEvents];
+        
         if (editingIndex !== null) {
             updatedEvents[editingIndex] = formData;
         } else {
@@ -212,7 +228,7 @@ export function CalendarManager({ events, onSaveEvents }: CalendarManagerProps) 
                 <h3 className="text-sm font-bold uppercase tracking-widest text-muted-foreground/80 mb-1 ml-1">
                     Currently Posted Events ({events.length})
                 </h3>
-                {events.length === 0 ? (
+                {!Array.isArray(events) || events.length === 0 ? (
                     <div className="p-8 border border-dashed rounded-3xl text-center text-muted-foreground text-sm bg-muted/10">
                         No dynamic calendar schedule listings found in storage.
                     </div>

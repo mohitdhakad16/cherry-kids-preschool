@@ -26,9 +26,13 @@ function Events() {
   const [eventList, setEventList] = useState<EventItem[]>([]);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    setEventList(getEvents());
-  }, []);
+useEffect(() => {
+  const loadEvents = async () => {
+    const data = await getEvents();
+    setEventList(data);
+  };
+  loadEvents();
+}, []);
 
   return (
     <>
