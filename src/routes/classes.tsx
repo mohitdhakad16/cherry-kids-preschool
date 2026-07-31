@@ -69,10 +69,10 @@ function Classes() {
                   ["10:00 AM", "Welcome circle", "Welcome circle", "Welcome circle", "Welcome circle"],
                   ["10:30 AM", "Sensory play", "Music & movement", "Phonics", "Reading workshop"],
                   ["11:00 AM", "Snack & story", "Snack & story", "Snack & story", "Snack & story"],
-                  ["11:30 AM", "Outdoor play", "Outdoor play", "Project time", "Math discovery"],
+                  ["11:30 AM", "Outdoor play", "Outdoor play", "Literacy", "Math discovery"],
                   ["12:00 AM", "Lunch", "Lunch", "Lunch", "Lunch"],
-                  ["12:20 AM", "Rest", "Quiet time", "Art studio", "Science lab"],
-                  ["12:45 AM", "Free play", "Free play", "Movement", "Group projects"],
+                  ["12:20 AM", "Rest", "Quiet time", "Numeracy", "Numeracy"],
+                  ["12:45 AM", "Free play", "Free play", "Movement", "Revision"],
                 ].map((row) => (
                   <tr key={row[0]} className="border-t border-border">
                     {row.map((cell, i) => (
