@@ -131,7 +131,7 @@ export function Footer() {
       <div className="absolute bottom-0 left-0 right-0 bg-[#fffdf4] border-t border-slate-100 z-20">
         <div className="container-x text-center py-4 text-xs font-medium text-slate-800">
           <p className="text-base text-slate-800">
-            © {new Date().getFullYear()} <b><a href="/" className="text-slate-900 hover:text-primary transition-colors">Cherry Kids Preschool</a></b>. All rights reserved. Designed & Developed by <a href="https://www.linkedin.com/in/abhishek-kumar-rajput/" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-primary transition-colors"><b>AdVibe Marketing Solutions</b></a>.
+            © {new Date().getFullYear()} <b><a href="/" className="text-slate-900 hover:text-primary transition-colors">Cherry Kids Preschool</a></b>. All rights reserved. Designed & Developed by <a href="http://advibemarketingsolution.com/" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-primary transition-colors"><b>AdVibe Marketing Solutions</b></a>.
           </p>
         </div>
       </div>
